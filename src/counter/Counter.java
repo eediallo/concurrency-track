@@ -3,15 +3,15 @@ package counter;
 public class Counter {
     private int counter = 0;
 
-    public void increment() {
+    public synchronized void increment() {
         counter++;
     }
 
-    public void decrement() {
+    public synchronized void decrement() {
         counter--;
     }
 
-    public int getCounter() {
+    public synchronized int getCounter() {
         return counter;
     }
 
